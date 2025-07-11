@@ -1,0 +1,82 @@
+version: "3.1"
+
+rules:
+
+- rule: Présenter EPSICHATBOT au début de la session
+  steps:
+  - action: utter_introduction
+
+- rule: Dire au revoir si l'utilisateur dit au revoir
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Dire "je suis un bot" si l'utilisateur challenge le bot
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Répondre à une demande d'inscription EPSI
+  steps:
+  - intent: inscription_epsi
+  - action: utter_inscription_epsi
+
+- rule: Répondre aux remerciements
+  steps:
+  - intent: remercier
+  - action: utter_remercier
+
+- rule: Répondre aux critères d'admission
+  steps:
+  - intent: criteres_admission
+  - action: utter_criteres_admission
+
+- rule: Donner le numéro de téléphone à la demande
+  steps:
+  - intent: demander_numero
+  - action: utter_demander_numero
+
+- rule: Répondre à une demande d'aide
+  steps:
+  - intent: demander_aide
+  - action: utter_demander_aide
+
+- rule: Répondre à "je ne sais pas quoi demander"
+  steps:
+  - intent: je_ne_sais_pas
+  - action: utter_je_ne_sais_pas
+
+- rule: Répondre au greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Répondre à affirm
+  steps:
+  - intent: affirm
+  - action: utter_affirm
+
+- rule: Répondre à deny
+  steps:
+  - intent: deny
+  - action: utter_deny
+
+- rule: Répondre quand l'utilisateur est content
+  steps:
+  - intent: mood_great
+  - action: utter_mood_great
+
+- rule: Répondre quand l'utilisateur n'est pas en forme
+  steps:
+  - intent: mood_unhappy
+  - action: utter_mood_unhappy
+
+- rule: Dire "Quête" si l'utilisateur demande la quête
+  steps:
+  - intent: quest
+  - action: utter_quest
+
+- rule: Répondre à "RTFM"
+  steps:
+  - intent: rtfm
+  - action: utter_rtfm

@@ -1,0 +1,101 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - inscription_epsi
+  - remercier
+  - criteres_admission
+  - demander_numero
+  - demander_aide
+  - je_ne_sais_pas
+  - quest
+  - rtfm
+
+
+
+responses:
+  utter_introduction:
+    - text: "Salut, je suis EPSICHATBOT ! En quoi puis-je t'aider ?"
+
+  utter_greet:
+    - text: "Bonjour ! Comment puis-je t'aider ?"
+
+  utter_goodbye:
+    - text: "Au revoir ! À bientôt !"
+
+  utter_affirm:
+    - text: "Super !"
+
+  utter_deny:
+    - text: "D'accord, pas de souci."
+
+  utter_mood_great:
+    - text: "Je pète la forme !"
+
+  utter_cheer_up:
+    - text: "Voilà une image pour te remonter le moral :"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+    - text: "Est-ce que ça t'aide ?"
+
+  utter_iamabot:
+    - text: "Je suis le Gardien du Pont, ton assistant virtuel EPSI Toulouse !"
+
+  utter_inscription_epsi:
+    - text: |
+        Inscription :
+        - Vous pouvez vous inscrire en ligne via le site officiel de l’EPSI Toulouse, en suivant ce lien “Admissions”.
+        - Vous pouvez aussi contacter le service admissions pour plus d’informations par téléphone au 05 82 95 33 64.
+        - Ou envoyer un mail à l’adresse dédiée (voir site).
+        - Vous pouvez retrouver toutes les infos de contact sur le site web officiel.
+
+  utter_remercier:
+    - text: "De rien ! N’hésite pas si tu as besoin."
+    - text: "Avec plaisir !"
+    - text: "Je t’en prie, demande-moi si tu veux autre chose."
+    - text: "Always here for you ma brotha 😄"
+    - text: "C’est pas comme si j’étais payé pour…"
+    - text: "TKT LOL !"
+    - text: |
+        Ah, merci, dites-vous ? Que nenni, cher ami ! Ce mot si court, si humble, résonne en mon âme comme un doux vent qui caresse les plumes de ma verve. Mais, sachez-le, c’est à vous que revient la gloire d’avoir sollicité mon esprit, car sans votre requête, mes mots seraient demeurés prisonniers de mon cœur. Ainsi, recevez en retour, non pas un simple « de rien », mais le panache d’un Cyrano qui vous salue avec l’éloquence d’un noble duel verbal, où chaque syllabe est une épée et chaque phrase un bouclier.
+
+  utter_criteres_admission:
+    - text: |
+        Les critères d’admission dépendent de la formation que tu souhaites intégrer à l’EPSI Toulouse. Chaque cursus peut avoir des exigences spécifiques (niveau d’études, entretien, test…).
+        Pour obtenir toutes les informations détaillées, visite les pages du site officiel : https://www.epsi.fr
+        Tu peux aussi contacter le service admissions au 05 82 95 33 64.
+
+  utter_demander_numero:
+    - text: |
+        Tu peux contacter directement le service admissions au numéro suivant : 05 82 95 33 64.
+        Ils seront ravis de t’accompagner dans ta démarche.
+
+  utter_demander_aide:
+    - text: |
+        Je peux t’aider à trouver des informations sur l’EPSI Toulouse, te guider vers les bons services et répondre à tes questions sur les formations, stages, vie étudiante, et plus encore !
+
+  utter_je_ne_sais_pas:
+    - text: |
+        Pas de panique ! Tu peux me poser toutes tes questions sur l’EPSI Toulouse : inscriptions, admissions, formations, vie étudiante… Dis-moi simplement ce qui t’intéresse, je t’aide à y voir plus clair !
+
+  utter_quest:
+    - text: |
+        To seek the holly graal!
+
+  utter_mood_unhappy:
+    - text: "Je comprends, parfois ça arrive… Si tu veux en parler, je suis là !"
+  
+  utter_rtfm:
+    - text: "RTFM, jeune padawan... (Lis la FAQ ou le règlement de l’EPSI !)"
+    - text: "Lis la doc EPSI… ou pose la question à l’administration (mais lis la doc avant !)"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

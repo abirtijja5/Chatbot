@@ -1,0 +1,219 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - bonjour
+    - salut
+    - coucou
+    - hey
+    - yo
+    - hello
+    - bonsoir
+    - salut toi
+    - hé
+    - bien le bonjour
+
+- intent: goodbye
+  examples: |
+    - au revoir
+    - à bientôt
+    - à plus
+    - bye
+    - salut
+    - à la prochaine
+    - ciao
+    - à plus tard
+    - bonne journée
+    - bonne soirée
+
+- intent: affirm
+  examples: |
+    - oui
+    - bien sûr
+    - bien sur
+    - évidemment
+    - tout à fait
+    - carrément
+    - absolument
+    - je confirme
+    - c’est clair
+    - ouais
+    - effectivement
+
+- intent: deny
+  examples: |
+    - non
+    - pas du tout
+    - jamais
+    - absolument pas
+    - sûrement pas
+    - non merci
+    - pas vraiment
+    - je ne pense pas
+    - plutôt pas
+    - hors de question
+
+- intent: mood_great
+  examples: |
+    - je vais très bien
+    - super !
+    - au top !
+    - tout roule
+    - je suis en pleine forme
+    - ça va nickel
+    - excellent !
+    - je suis content
+    - je me sens bien
+    - tout va bien
+
+- intent: mood_unhappy
+  examples: |
+    - je suis fatigué
+    - pas top
+    - bof
+    - ça ne va pas fort
+    - j’en ai marre
+    - journée pourrie
+    - je suis énervé
+    - je suis stressé
+    - pas en forme
+    - c’est pas mon jour
+
+- intent: bot_challenge
+  examples: |
+    - tu es un robot ?
+    - est-ce que tu es humain ?
+    - je parle à un humain ?
+    - tu es réel ?
+    - est-ce que je parle à une machine ?
+    - est-ce que tu es un vrai ?
+    - t’es un programme ?
+    - suis-je en train de parler à un bot ?
+    - es-tu un assistant virtuel ?
+    - tu es vivant ?
+
+- intent: inscription_epsi
+  examples: |
+    - Je souhaite m’inscrire à l’EPSI
+    - Comment s’inscrire à l’EPSI ?
+    - EPSI inscription
+    - Contact EPSI
+    - Qui contacter pour une inscription à l’EPSI ?
+    - Comment s’inscrire ?
+    - Quelles démarches pour s’inscrire à l’EPSI ?
+    - Je voudrais m’inscrire
+    - inscription
+    - contact inscription
+    - quand s’inscrire
+    - Entrée EPSI
+    - Rentrée EPSI
+    - Ecole des Professionnels Sciences de l’Informatique
+    - Inscription école
+    - Aide inscription
+
+- intent: remercier
+  examples: |
+    - Merci beaucoup
+    - Top
+    - Je te remercie
+    - Cool
+    - yes !
+    - Parfait
+    - ça marche
+    - Niquel
+    - OK
+    - Super
+
+- intent: criteres_admission
+  examples: |
+    - Quelles sont les conditions pour être admis à l’EPSI Toulouse ?
+    - Comment se passe la sélection pour entrer à l’EPSI ?
+    - Quels sont les prérequis pour intégrer l’école ?
+    - Quels diplômes faut-il pour postuler ?
+    - Quelles sont les étapes du processus d’admission ?
+    - Comment puis-je être accepté à l’EPSI Toulouse ?
+    - Y a-t-il des tests ou entretiens pour l’admission ?
+    - Quels sont les critères pour être accepté dans la formation ?
+    - Quelles compétences dois-je avoir pour candidater ?
+    - Comment fonctionne la procédure d’admission ?
+    - Admission
+    - Critère d’admission
+
+- intent: demander_numero
+  examples: |
+    - Quel est le numéro de téléphone pour obtenir des informations ?
+    - Comment puis-je contacter l’EPSI par téléphone ?
+    - Quel est le numéro à appeler pour des questions sur l’école ?
+    - Où puis-je trouver le numéro de téléphone de l’EPSI ?
+    - Quel est le numéro de contact pour les informations générales ?
+    - À quel numéro dois-je appeler pour parler à quelqu’un ?
+    - Quel est le numéro de téléphone du service d’information ?
+    - Comment puis-je joindre l’EPSI par téléphone ?
+    - Quel est le numéro pour contacter le service des admissions ?
+    - Quel est le numéro de téléphone pour les questions sur les formations ?
+    - Où puis-je trouver le numéro de téléphone pour les étudiants ?
+    - Quel est le numéro à appeler pour obtenir des renseignements sur l’école ?
+    -Comment j'appelle l’EPSI ?
+
+- intent: demander_aide
+  examples: |
+    - Est-ce que tu peux m’aider ?
+    - Peux-tu me donner un coup de main ?
+    - J’ai besoin d’aide, tu peux m’assister ?
+    - Tu peux m’accompagner ?
+    - Est-ce que tu es là pour m’aider ?
+    - Peux-tu répondre à mes questions ?
+    - Tu peux me guider ?
+    - J’ai besoin d’un coup de pouce, tu peux ?
+    - Peux-tu m’épauler ?
+    - Est-ce que tu peux me conseiller ?
+    - Tu peux m’aider avec ça ?
+    - Peux-tu m’apporter ton aide ?
+    - Besoin aide
+
+- intent: je_ne_sais_pas
+  examples: |
+    - Je ne sais pas quoi te demander.
+    - Je ne sais pas par où commencer.
+    - Je ne sais pas quoi dire.
+    - Je suis perdu, je ne sais pas quoi demander.
+    - Je ne sais pas comment formuler ma question.
+    - Je ne sais pas quoi chercher.
+    - Je ne sais pas comment commencer.
+    - Je ne sais pas quoi poser comme question.
+    - Je ne sais pas quoi te dire.
+    - Je ne sais pas comment te demander de l’aide.
+    - Je ne sais pas quoi te demander exactement.
+    - Je suis un peu perdu, je ne sais pas quoi demander.
+    - 42
+
+- intent: quest
+  examples: |
+    - Quelle est ta quête ?
+    - Quelle est ta quete ?
+    - quelle est ta quête ?
+    - quelle est ta quête ?
+
+- intent: rtfm
+  examples: |
+    - Est-ce que je dois vraiment venir en cours à l’EPSI ?
+    - Si je dors en cours, j’ai quand même mon diplôme ?
+    - Je peux manger du popcorn pendant les partiels ?
+    - Si je rends une copie blanche, j’ai des points pour l’effort ?
+    - C’est où l’EPSI ? (alors qu’il y a l’adresse partout)
+    - Je peux passer mes examens sur Discord ?
+    - L’EPSI, c’est une salle de sport ?
+    - On peut venir en pyjama à l’EPSI ?
+    - Y’a le Wi-Fi à l’EPSI ?
+    - Si j’oublie de venir toute l’année, j’ai quand même une attestation ?
+    - Je peux gratter des points en complimentant le prof ?
+    - Je suis obligé de rendre les devoirs ?
+    - Il y a une piscine à l’EPSI ?
+    - C’est grave si je confonds EPSI et Poudlard ?
+    - On a droit à l’ordinateur pendant l’examen papier ?
+    - Est-ce que l’EPSI fournit les réponses aux partiels ?
+    - Si je mets mon CV en Comic Sans, ça passe ?
+    - On a des cours de sieste à l’EPSI ?
+    - Je peux choisir mes notes ?
+    - L’EPSI, ça se mange ?

@@ -1,0 +1,68 @@
+version: "3.1"
+
+stories:
+
+- story: parcours standard positif
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_mood_great
+  - intent: remercier
+  - action: utter_remercier
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: parcours standard négatif
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_mood_unhappy
+  - intent: demander_aide
+  - action: utter_demander_aide
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: inscription
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inscription_epsi
+  - action: utter_inscription_epsi
+  - intent: remercier
+  - action: utter_remercier
+
+- story: critères admission
+  steps:
+  - intent: criteres_admission
+  - action: utter_criteres_admission
+
+- story: demander le numéro
+  steps:
+  - intent: demander_numero
+  - action: utter_demander_numero
+  - intent: remercier
+  - action: utter_remercier
+
+- story: test affirmation/deny
+  steps:
+  - intent: affirm
+  - action: utter_affirm
+  - intent: deny
+  - action: utter_deny
+
+- story: bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- story: perdu
+  steps:
+  - intent: je_ne_sais_pas
+  - action: utter_je_ne_sais_pas
+
+- story: rtfm
+  steps:
+  - intent: rtfm
+  - action: utter_rtfm
