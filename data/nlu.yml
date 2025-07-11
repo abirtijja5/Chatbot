@@ -217,3 +217,13 @@ nlu:
     - On a des cours de sieste à l’EPSI ?
     - Je peux choisir mes notes ?
     - L’EPSI, ça se mange ?
+- intent: ask_contact
+  examples: |
+    - Quels sont les contacts de l'EPSI ?
+    - Où puis-je appeler l'administration ?
+    - Comment contacter l'école ?
+- intent: ask_formations
+  examples: |
+    - Quelles formations proposez-vous ?
+    - Quels sont les cursus disponibles ?
+    - Parle-moi des formations EPSI

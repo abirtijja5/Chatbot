@@ -16,6 +16,20 @@ intents:
   - je_ne_sais_pas
   - quest
   - rtfm
+  - ask_scolarite
+  - ask_stage
+  - ask_alternance
+  - ask_vie_etudiante
+  - ask_administration
+  - ask_informatique
+  - ask_planning
+  - ask_contact
+  - ask_formations
+  - ask_admission
+  - ask_location
+  - ask_library
+  - thanks
+  - ask_help
 
 
 
@@ -95,6 +109,275 @@ responses:
   utter_rtfm:
     - text: "RTFM, jeune padawan... (Lis la FAQ ou le règlement de l’EPSI !)"
     - text: "Lis la doc EPSI… ou pose la question à l’administration (mais lis la doc avant !)"
+  
+  utter_ask_scolarite:
+    - text: |
+        📚 **Service Scolarité EPSI Toulouse**
+        
+        **Contact :** 
+        - Email : scolarite.toulouse@epsi.fr
+        - Téléphone : 05 34 61 42 00
+        - Bureau : Accueil principal
+        
+        **Ils peuvent vous aider pour :**
+        - Inscriptions et réinscriptions
+        - Modifications de cursus
+        - Bulletins de notes et relevés
+        - Attestations de scolarité
+        - Gestion des absences
+        - Organisation des rattrapages
+        
+        **Horaires :** Lundi à Vendredi 8h30-17h30
+
+  utter_ask_stage:
+    - text: |
+        💼 **Service Stages EPSI Toulouse**
+        
+        **Contact :**
+        - Responsable stages : Mme Dupont
+        - Email : stages.toulouse@epsi.fr
+        - Téléphone : 05 34 61 42 05
+        
+        **Services proposés :**
+        - Aide à la recherche de stage
+        - Conventions de stage
+        - Suivi des stagiaires
+        - Réseau d'entreprises partenaires
+        - Validation des stages
+        
+        **À savoir :** Les stages sont obligatoires pour tous les cursus. Durée minimum : 2 mois.
+
+  utter_ask_alternance:
+    - text: |
+        🎓 **Service Alternance EPSI Toulouse**
+        
+        **Contact :**
+        - Responsable alternance : M. Martin
+        - Email : alternance.toulouse@epsi.fr
+        - Téléphone : 05 34 61 42 06
+        
+        **Services :**
+        - Aide à la recherche d'entreprise
+        - Contrats d'apprentissage/professionnalisation
+        - Suivi pédagogique
+        - Relations entreprises
+        
+        **Rythme :** Généralement 3 semaines en entreprise / 1 semaine à l'école
+        **Salaire :** Selon grille officielle (55% à 100% du SMIC)
+
+  utter_ask_vie_etudiante:
+    - text: |
+        🎉 **Vie Étudiante EPSI Toulouse**
+        
+        **Bureau Des Étudiants (BDE) :**
+        - Email : bde.toulouse@epsi.fr
+        - Local : Salle B105
+        
+        **Activités disponibles :**
+        - Soirées étudiantes
+        - Tournois esport
+        - Club informatique
+        - Événements tech
+        - Partenariats avec d'autres écoles
+        
+        **Logement :** Aide pour trouver un logement étudiant
+        **Sport :** Accès aux installations sportives du campus
+
+  utter_ask_administration:
+    - text: |
+        🏢 **Administration EPSI Toulouse**
+        
+        **Direction :**
+        - Directeur : M. Rousseau
+        - Email : direction.toulouse@epsi.fr
+        - Téléphone : 05 34 61 42 01
+        
+        **Secrétariat :**
+        - Email : secretariat.toulouse@epsi.fr
+        - Téléphone : 05 34 61 42 00
+        
+        **Services :**
+        - Certificats de scolarité
+        - Attestations diverses
+        - Règlement intérieur
+        - Réclamations
+        
+        **Horaires :** Lundi à Vendredi 8h30-17h30
+
+  utter_ask_informatique:
+    - text: |
+        💻 **Support Informatique EPSI Toulouse**
+        
+        **Contact :**
+        - Responsable IT : M. Leroy
+        - Email : support.toulouse@epsi.fr
+        - Téléphone : 05 34 61 42 10
+        
+        **Problèmes gérés :**
+        - Accès WiFi et réseau
+        - Comptes utilisateurs
+        - Mots de passe oubliés
+        - Matériel informatique
+        - Logiciels et licences
+        
+        **WiFi :** Réseau "EPSI-Student" - Login avec identifiants étudiants
+        **Horaires support :** Lundi à Vendredi 8h30-17h30
+
+  utter_ask_planning:
+    - text: |
+        📅 **Planning et Emploi du Temps**
+        
+        **Consultation :**
+        - Plateforme en ligne : myepsi.fr
+        - Affichage : Panneaux d'information
+        - Application mobile EPSI
+        
+        **Contact Planning :**
+        - Email : planning.toulouse@epsi.fr
+        - Téléphone : 05 34 61 42 03
+        
+        **Informations importantes :**
+        - Changements d'horaires affichés 48h avant
+        - Notifications par email
+        - Salles de cours indiquées sur le planning
+        
+        **Examens :** Calendrier affiché 2 semaines avant les épreuves
+
+  utter_ask_contact:
+    - text: |
+        📞 **Contacts EPSI Toulouse**
+        
+        **Adresse :**
+        51 rue des Filatiers
+        31000 Toulouse
+        
+        **Téléphone principal :** 05 34 61 42 00
+        **Email général :** toulouse@epsi.fr
+        **Site web :** www.epsi.fr
+        
+        **Horaires d'ouverture :**
+        - Lundi à Vendredi : 8h30 - 17h30
+        - Samedi : 8h30 - 12h00 (examens uniquement)
+        
+        **Accueil :** Rez-de-chaussée, bureau d'information
+
+  utter_ask_formations:
+    - text: |
+        🎓 **Formations EPSI Toulouse**
+        
+        **Cursus disponibles :**
+        
+        **Bac+2 :**
+        - BTS SIO (Services Informatiques aux Organisations)
+        
+        **Bac+3 :**
+        - Bachelor Informatique
+        - Bachelor Cybersécurité
+        - Bachelor Data & IA
+        
+        **Bac+5 :**
+        - Master Ingénierie Logicielle
+        - Master Cybersécurité
+        - Master Data Science
+        - Master Management des SI
+        
+        **Spécialisations :** Développement, Infrastructure, Sécurité, Intelligence Artificielle
+        **Débouchés :** Développeur, Architecte SI, Consultant, Chef de projet IT
+
+  utter_ask_admission:
+    - text: |
+        📝 **Admission EPSI Toulouse**
+        
+        **Contact Admissions :**
+        - Email : admissions.toulouse@epsi.fr
+        - Téléphone : 05 34 61 42 02
+        
+        **Processus d'admission :**
+        1. Candidature en ligne sur epsi.fr
+        2. Dossier + entretien de motivation
+        3. Tests techniques (selon niveau)
+        4. Décision d'admission
+        
+        **Frais de scolarité :** 
+        - Bachelor : 6 500€/an
+        - Master : 7 500€/an
+        - Alternance : Prise en charge entreprise
+        
+        **Bourses :** Possibilité de bourses d'excellence et sociales
+
+  utter_ask_location:
+    - text: |
+        📍 **Localisation EPSI Toulouse**
+        
+        **Adresse :**
+        51 rue des Filatiers
+        31000 Toulouse
+        
+        **Transports :**
+        - Métro : Ligne A - Station Esquirol (3 min à pied)
+        - Bus : Lignes 2, 10, 12, 14 - Arrêt Filatiers
+        - Parking : Parking public Esquirol (200m)
+        
+        **À proximité :**
+        - Centre-ville de Toulouse
+        - Garonne (5 min à pied)
+        - Nombreux commerces et restaurants
+        
+        **Plan d'accès :** Disponible sur epsi.fr/toulouse
+
+  utter_ask_library:
+    - text: |
+        📚 **Bibliothèque EPSI Toulouse**
+        
+        **Localisation :** 2ème étage, salle B201
+        
+        **Horaires :**
+        - Lundi à Vendredi : 8h30 - 18h00
+        - Samedi : 9h00 - 12h00 (période d'examens)
+        
+        **Services :**
+        - Prêt de livres techniques
+        - Espaces de travail silencieux
+        - Accès aux ressources numériques
+        - Revues spécialisées IT
+        
+        **Ressources :**
+        - 2000+ ouvrages informatiques
+        - Abonnements magazines tech
+        - Accès bases de données
+        
+        **Contact :** bibliotheque.toulouse@epsi.fr
+
+  utter_thanks:
+    - text: "De rien ! Je suis là pour ça. N'hésitez pas si vous avez d'autres questions !"
+    - text: "Avec plaisir ! C'est mon rôle de vous aider à l'EPSI Toulouse."
+    - text: "Parfait ! Revenez me voir dès que vous avez besoin d'informations."
+
+  utter_ask_help:
+    - text: |
+        🤖 **Aide - Chatbot EPSI Toulouse**
+        
+        **Je peux vous aider sur :**
+        
+        📚 **Scolarité :** Notes, inscriptions, attestations
+        💼 **Stages :** Recherche, conventions, suivi
+        🎓 **Alternance :** Contrats, entreprises partenaires
+        🎉 **Vie étudiante :** BDE, associations, événements
+        🏢 **Administration :** Direction, secrétariat
+        💻 **Informatique :** Support technique, WiFi
+        📅 **Planning :** Emploi du temps, examens
+        📞 **Contacts :** Coordonnées services
+        🎓 **Formations :** Cursus, spécialisations
+        📝 **Admission :** Candidature, frais
+        📍 **Localisation :** Adresse, transports
+        📚 **Bibliothèque :** Horaires, ressources
+        
+        **Comment utiliser :** Tapez votre question en français naturel !
+
+  utter_default:
+    - text: "Désolé, je n'ai pas compris votre demande. Tapez 'aide' pour voir ce que je peux faire pour vous !"
+    - text: "Je ne suis pas sûr de comprendre. Pouvez-vous reformuler votre question ? Tapez 'aide' pour plus d'informations."
+
 
 session_config:
   session_expiration_time: 60

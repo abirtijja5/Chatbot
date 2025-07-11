@@ -89,3 +89,13 @@ stories:
       are you a bot?
     intent: bot_challenge
   - action: utter_iamabot
+  
+- story: demander contacts
+  steps:
+  - intent: ask_contact
+  - action: utter_ask_contact
+
+- story: demander formations
+  steps:
+  - intent: ask_formations
+  - action: utter_ask_formations
